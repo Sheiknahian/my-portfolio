@@ -1,0 +1,103 @@
+[
+    {
+        "id": 1,
+        "title": "Parcel Delivery Platform",
+        "slug": "parcel-delivery-platform",
+        "image": "./Profast_Cover.png",
+        "description": "A full-stack parcel delivery management system with parcel booking, tracking, and role-based dashboards.",
+        "technologies": [
+            "react",
+            "nodejs",
+            "express",
+            "mongodb",
+            "firebase",
+            "tailwind"
+        ],
+        "Home": [
+            "Parcel booking system",
+            "Real-time parcel tracking",
+            "Admin dashboard",
+            "Delivery personnel management",
+            "Authentication and authorization"
+        ],
+        "githubClient": "https://github.com/username/parcel-client",
+        "githubServer": "https://github.com/username/parcel-server",
+        "liveLink": "https://parcel-delivery.vercel.app",
+        "category": "Full Stack",
+        "status": "Completed"
+    },
+    {
+        "id": 2,
+        "title": "E-Commerce Platform",
+        "slug": "e-commerce-platform",
+        "image": "./smart-deals-res/smart-deals-cover.png",
+        "description": "Developed a complete e-commerce platform with authentication, product management and cart functionality",
+        "technologies": [
+            "react",
+            "nodejs",
+            "express",
+            "mongodb",
+            "firebase",
+            "tailwind"
+        ],
+        "Home": [
+            "Create and Ppost a product",
+            "Product bidding and add to wishlist",
+            "Modern ui design",
+            "Searching product by name",
+            "Authentication and authorization"
+        ],
+        "githubClient": "https://github.com/username/parcel-client",
+        "githubServer": "https://github.com/username/parcel-server",
+        "liveLink": "https://parcel-delivery.vercel.app",
+        "category": "Full Stack",
+        "status": "Completed"
+    },
+    {
+        "id": 3,
+        "title": "Online Reading Hub",
+        "slug": "online-reading-hub",
+        "image": "./book-vibe-res/book-vibe-cover.png",
+        "description": "An online book reading platform where users can discover, read, and manage their favorite books in a seamless digital environment.",
+        "technologies": [
+            "react",
+            "firebase",
+            "tailwind"
+        ],
+        "Home": [
+            "Book details and reading",
+            "Modern ui design",
+            "Book wishlist and readlist system",
+            "Simple Authentication"
+        ],
+        "githubClient": "https://github.com/username/parcel-client",
+        "githubServer": "https://github.com/username/parcel-server",
+        "liveLink": "https://parcel-delivery.vercel.app",
+        "category": "Frontend",
+        "status": "Completed"
+    },
+    {
+        "id": 4,
+        "title": "English Learning Platform",
+        "slug": "english-learning-platform",
+        "image": "./english-janala-res/english-janala-cover.png",
+        "description": "An interactive English learning platform designed to improve vocabulary, pronunciation, and communication skills through engaging lessons and exercises.",
+        "technologies": [
+            "html",
+            "tailwind",
+            "javascript"
+        ],
+        "Home": [
+            "Said word pronunctiaton by voice",
+            "Load word cards by lesson tab",
+            "Show words details",
+            "FAQ feature",
+            "Simple Authentication"
+        ],
+        "githubClient": "https://github.com/username/parcel-client",
+        "githubServer": "https://github.com/username/parcel-server",
+        "liveLink": "https://parcel-delivery.vercel.app",
+        "category": "Frontend",
+        "status": "Completed"
+    }
+]
