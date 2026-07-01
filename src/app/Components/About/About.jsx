@@ -8,7 +8,7 @@ import { FaBolt, FaBookOpen, FaPuzzlePiece, FaRocket } from 'react-icons/fa';
 const About = () => {
     return (
         <div
-        className='pb-20 mx-5'>
+        className='pt-10 mb-20 mx-5'>
             <H3Text>About Me</H3Text>
             <div className='mt-15 grid grid-cols-4 gap-10'>
                 <motion.div
@@ -25,7 +25,7 @@ const About = () => {
                 </motion.div>
 
                 <motion.div 
-                initial={{ opacity: 0, y: 100 }}
+                initial={{ opacity: 0, y: 80 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1.2 }}
@@ -38,7 +38,7 @@ const About = () => {
                 </motion.div>
 
                 <motion.div 
-                initial={{ opacity: 0, y: 150 }}
+                initial={{ opacity: 0, y: 110 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1.2 }}
@@ -51,7 +51,7 @@ const About = () => {
                 </motion.div>
 
                 <motion.div 
-                initial={{ opacity: 0, y: 200 }}
+                initial={{ opacity: 0, y: 140 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1.2 }}
@@ -65,7 +65,7 @@ const About = () => {
 
                 
                 <motion.div 
-                initial={{ opacity: 0, y: 100 }}
+                initial={{ opacity: 0, y: 80 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1.2 }}
@@ -86,7 +86,7 @@ const About = () => {
                     </div>
                 </motion.div>
                 <motion.img 
-                initial={{ opacity: 0, y: 200 }}
+                initial={{ opacity: 0, y: 140 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1.2 }}

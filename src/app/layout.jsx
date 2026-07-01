@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className={`${outfit.className} min-h-full flex flex-col`}>
-        <header>
+        <header className="fixed w-full">
           <Navbar></Navbar>
         </header>
         <main className="bg-[#0B1120]">

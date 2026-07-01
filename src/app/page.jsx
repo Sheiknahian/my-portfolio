@@ -7,7 +7,7 @@ export default function Home() {
     <div className="bg-zinc-50 font-sans dark:bg-black">
       <main className="space-y-20 bg-[#0B1120]">
         <Banner></Banner>
-        <section id="about">
+        <section id="about" className="scroll-mt-15">
           <About></About>
         </section>
       </main>
