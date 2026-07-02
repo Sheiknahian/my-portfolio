@@ -9,7 +9,7 @@ const Navbar = () => {
             <nav className="p-5 flex justify-between items-center border-b border-white bg-[#111827] backdrop-blur-md">
                 {/* <Link href={'/'}><h2 className="text-3xl text-white font-bold px-4 py-1 rounded-full bg-linear-to-r to-sky-200 from-sky-900">Next <span className='text-sky-800'>Journey</span></h2></Link> */}
                 <Link href={'/'}>
-                    <h1 className="text-4xl font-extrabold">
+                    <h1 className="text-4xl font-extrabold text-white">
                         <span className="text-sky-500">&lt;</span>
                         SN
                         <span className="text-sky-500"> /&gt;</span>

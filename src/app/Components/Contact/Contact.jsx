@@ -14,7 +14,7 @@ import { TbBrandFiverr } from "react-icons/tb";
 
 const Contact = () => {
     return (
-        <div className='mx-5 mb-10'>
+        <div className='mx-5 mb-50'>
             <H3Text>Contact</H3Text>
             <div className='mt-15 grid grid-cols-2 gap-10'>
                 <div className='flex flex-col justify-center'>
@@ -29,8 +29,8 @@ const Contact = () => {
                             <p>sheiknahian06@gmail.com</p>
                         </div>
                         <div className='bg-white p-3 rounded-2xl flex flex-col items-center justify-center gap-1'>
-                            <p className='text-lg font-semibold flex items-center gap-1'><FaGithub></FaGithub> Github</p>
-                            <a href='https://github.com/Sheiknahian' className='hover:underline hover:text-blue-500'>https://github.com/Sheiknahian</a>
+                            <p className='text-lg font-semibold flex items-center gap-1'><FaMapMarkerAlt className='text-red-500'></FaMapMarkerAlt> Location</p>
+                            <p>Mirpur-10, Dhaka, Bangladesh</p>
                         </div>
                     </motion.div>
                     <motion.div 
@@ -40,7 +40,7 @@ const Contact = () => {
                     transition={{ duration: 1.5 }}
                     className='my-12'>
                         <h4 className='text-sky-500 text-xl font-bold'>Get In Touch</h4>
-                        <p>Have a project in mind or want to collaborate?
+                        <p className='text-gray-200'>Have a project in mind or want to collaborate?
                         Feel free to reach out. I'm always open to discussing new opportunities.</p>
                     </motion.div>
                     <motion.div 
@@ -70,14 +70,14 @@ const Contact = () => {
                             <a href='https://www.facebook.com/nahianology' className='hover:underline hover:text-blue-500'>https://www.facebook.com/nahian...</a>
                         </div>
                         <div className='bg-white p-3 rounded-2xl flex flex-col items-center justify-center gap-1'>
-                            <p className='text-lg font-semibold flex items-center gap-1'><FaMapMarkerAlt className='text-red-500'></FaMapMarkerAlt> Location</p>
-                            <p>Mirpur-10, Dhaka, Bangladesh</p>
+                            <p className='text-lg font-semibold flex items-center gap-1'><FaGithub></FaGithub> Github</p>
+                            <a href='https://github.com/Sheiknahian' className='hover:underline hover:text-blue-500'>https://github.com/Sheiknahian</a>
                         </div>
                     </motion.div>
                 </div>
                 <motion.div 
-                initial={{ opacity: 0, x: 600 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 200 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1 }}
                 className='flex justify-center items-center bg-white rounded-2xl p-10'>

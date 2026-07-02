@@ -19,6 +19,7 @@ export const metadata = {
 };
 
 import { Outfit } from "next/font/google";
+import Footer from "./Components/Footer/Footer";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -36,7 +37,11 @@ export default function RootLayout({ children }) {
         </header>
         <main className="bg-[#0B1120]">
           {children}
-        </main></body>
+        </main>
+        <footer>
+          <Footer></Footer>
+        </footer>
+      </body>
     </html>
   );
 }
