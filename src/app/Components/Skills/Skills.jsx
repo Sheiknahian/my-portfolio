@@ -9,7 +9,7 @@ const Skills = () => {
 
 
     return (
-        <div className=''>
+        <div className='mt-30'>
             <H3Text>Skills & Technologies</H3Text>
             <div className="relative mt-50">
                 {/* Timeline Progress */}
@@ -97,7 +97,7 @@ const Skills = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1.2 }}
-                className="relative flex items-center mb-80">
+                className="relative flex items-center mb-60">
                     <div className="absolute border border-2 border-sky-500 shadow-lg shadow-white right-3/20 w-[30%] bg-white p-5 rounded-xl">
                         <h4 className='text-sky-600 text-xl font-bold'>Tools & Workflow</h4>
                         <p className='text-gray-700'>Using industry-standard tools for version control, collaboration, testing, and efficient development.</p>

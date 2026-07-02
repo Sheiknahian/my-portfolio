@@ -8,7 +8,7 @@ import { FaBolt, FaBookOpen, FaPuzzlePiece, FaRocket } from 'react-icons/fa';
 const About = () => {
     return (
         <div
-        className='pt-10 mb-20 mx-5'>
+        className='mt-20 mb-20 mx-5'>
             <H3Text>About Me</H3Text>
             <div className='mt-15 grid grid-cols-4 gap-10'>
                 <motion.div

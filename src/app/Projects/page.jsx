@@ -64,7 +64,7 @@ const Projects = () => {
     console.log(projects);
     
     return (
-        <div className='my-20 text-center mx-5'>
+        <div className='mt-30 mb-20 text-center mx-5'>
             <H3Text>My Projects</H3Text>
             <div className='mt-10 grid grid-cols-3 gap-8'>
             {
