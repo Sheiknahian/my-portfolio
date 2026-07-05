@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import H3Text from '../Components/h3Text';
 import { FaArrowRight, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiTailwindcss, SiFirebase } from "react-icons/si";
+import Link from 'next/link';
 
 const techMap = {
     html: {
@@ -57,6 +58,7 @@ const techMap = {
 const Projects = () => {
     const [projects, setProjects] = useState([])
     useEffect(()=>{
+        window.scrollTo(0, 0);
         fetch('/projects.json')
             .then(res=>res.json())
             .then(data=>setProjects(data))
@@ -66,7 +68,7 @@ const Projects = () => {
     return (
         <div className='mt-30 mb-20 text-center mx-5'>
             <H3Text>My Projects</H3Text>
-            <div className='mt-10 grid grid-cols-3 gap-8'>
+            <div className='mt-10 grid grid-cols-1 md:grid-cols-3 gap-8'>
             {
                 projects?.map((project, index)=>
                     <div key={index} className="bg-white overflow-hidden rounded-3xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:border-sky-500/30 shadow hover:shadow-sky-400 shadow-lg">
@@ -96,10 +98,10 @@ const Projects = () => {
                                 }
                                 </div>
 
-                                <button className="group flex items-center gap-2 justify-center mt-5 w-full rounded-lg bg-sky-700 py-2 font-semibold text-white transition hover:bg-sky-800 cursor-pointer">
+                                <Link href={`/Projects/${project.slug}`} className="group flex items-center gap-2 justify-center mt-5 w-full rounded-lg bg-sky-700 py-2 font-semibold text-white transition hover:bg-sky-800 cursor-pointer">
                                     View Details
                                     <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
-                                </button>
+                                </Link>
                             </div>
                         </div>
                 )

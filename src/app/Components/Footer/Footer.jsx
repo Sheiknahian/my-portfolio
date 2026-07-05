@@ -12,9 +12,9 @@ import { TbBrandFiverr } from "react-icons/tb";
 
 const Footer = () => {
     return (
-        <div className='bg-black text-white p-30'>
+        <div className='bg-black text-white py-20 md:py-none md:p-30'>
             <div className='flex flex-col gap-10 items-center justify-center'>
-                <div className='flex items-center gap-50'>
+                <div className='flex flex-col gap-10 md:flex-row items-center md:gap-50'>
                     <div>
                         <Link href={'/'}>
                             <h1 className="text-4xl font-extrabold text-white">

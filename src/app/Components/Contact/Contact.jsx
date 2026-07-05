@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import H3Text from '../h3Text';
 import { motion } from 'framer-motion';
 import {
@@ -12,21 +12,27 @@ import {
 
 import { TbBrandFiverr } from "react-icons/tb";
 
+
 const Contact = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        setIsMobile(window.innerWidth < 768);
+    }, []);
     return (
         <div className='mx-5 mb-50'>
             <H3Text>Contact</H3Text>
-            <div className='mt-15 grid grid-cols-2 gap-10'>
+            <div className='mt-15 grid md:grid-cols-2 sm:grid-cols-1 gap-10'>
                 <div className='flex flex-col justify-center'>
                     <motion.div 
-                    initial={{ opacity: 0, x: -600 }}
+                    initial={{ opacity: 0, x: isMobile ? -600 : -200 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1 }}
                     className='grid grid-cols-2 gap-5 text-black'>
                         <div className='bg-white p-3 rounded-2xl flex flex-col items-center justify-center gap-1'>
                             <p className='text-lg font-semibold flex items-center gap-1'><FaEnvelope></FaEnvelope> Email</p>
-                            <p>sheiknahian06@gmail.com</p>
+                            <p>sheiknahian06@...</p>
                         </div>
                         <div className='bg-white p-3 rounded-2xl flex flex-col items-center justify-center gap-1'>
                             <p className='text-lg font-semibold flex items-center gap-1'><FaMapMarkerAlt className='text-red-500'></FaMapMarkerAlt> Location</p>
@@ -41,10 +47,10 @@ const Contact = () => {
                     className='my-12'>
                         <h4 className='text-sky-500 text-xl font-bold'>Get In Touch</h4>
                         <p className='text-gray-200'>Have a project in mind or want to collaborate?
-                        Feel free to reach out. I'm always open to discussing new opportunities.</p>
+                        Feel free to reach out. I am always open to discussing new opportunities.</p>
                     </motion.div>
                     <motion.div 
-                    initial={{ opacity: 0, x: -600 }}
+                    initial={{ opacity: 0, x: isMobile ? -600 : -200 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1 }}
@@ -52,52 +58,52 @@ const Contact = () => {
                         <div className='bg-white p-3 rounded-2xl flex flex-col items-center justify-center gap-1'>
                             <p className='text-lg font-semibold flex items-center gap-1'>
                                 <TbBrandFiverr className='text-green-500'></TbBrandFiverr> Fiverr</p>
-                            <a href='https://www.fiverr.com/sheikh_nahian' className='hover:underline hover:text-blue-500'>https://www.fiverr.com/sheikh_na...</a>
+                            <a href='https://www.fiverr.com/sheikh_nahian' className='hover:underline hover:text-blue-500'>Sheikh Nahian</a>
                         </div>
                         <div className='bg-white p-3 rounded-2xl flex flex-col items-center justify-center gap-1'>
                             <p className='text-lg font-semibold flex items-center gap-1'><FaLinkedin className='text-blue-500'></FaLinkedin> Linkedin</p>
-                            <a href='https://www.linkedin.com/in/sheik-nahian-b9131a419/' className='hover:underline hover:text-blue-500'>https://www.linkedin.com/nahi...</a>
+                            <a href='https://www.linkedin.com/in/sheik-nahian-b9131a419/' className='hover:underline hover:text-blue-500'>Sheikh Nahian</a>
                         </div>
                     </motion.div>
                     <motion.div 
-                    initial={{ opacity: 0, x: -600 }}
+                    initial={{ opacity: 0, x: isMobile ? -600 : -200 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1 }}
                     className='grid grid-cols-2 gap-5 text-black mt-5'>
                         <div className='bg-white p-3 rounded-2xl flex flex-col items-center justify-center gap-1'>
                             <p className='text-lg font-semibold flex items-center gap-1'><FaFacebook className='text-blue-500'></FaFacebook> Facebook</p>
-                            <a href='https://www.facebook.com/nahianology' className='hover:underline hover:text-blue-500'>https://www.facebook.com/nahian...</a>
+                            <a href='https://www.facebook.com/nahianology' className='hover:underline hover:text-blue-500'>Sheikh Nahian</a>
                         </div>
                         <div className='bg-white p-3 rounded-2xl flex flex-col items-center justify-center gap-1'>
                             <p className='text-lg font-semibold flex items-center gap-1'><FaGithub></FaGithub> Github</p>
-                            <a href='https://github.com/Sheiknahian' className='hover:underline hover:text-blue-500'>https://github.com/Sheiknahian</a>
+                            <a href='https://github.com/Sheiknahian' className='hover:underline hover:text-blue-500'>Sheikh Nahian</a>
                         </div>
                     </motion.div>
                 </div>
                 <motion.div 
-                initial={{ opacity: 0, y: 200 }}
+                initial={{ opacity: 0, y: isMobile ? 200 : 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1 }}
-                className='flex justify-center items-center bg-white rounded-2xl p-10'>
+                className='flex justify-center items-center bg-white rounded-2xl p-4 md:p-10'>
                     <form action={'https://api.web3forms.com/submit'} method='POST' className='flex flex-col items-center'>
-                        <h4 className='font-bold text-2xl text-sky-600 mb-5'>{"Let's Build Something Amazing Together"}</h4>
+                        <h4 className='font-bold text-2xl text-center text-sky-600 mb-5'>{"Let's Build Something Amazing Together"}</h4>
                         <input name='access_key' defaultValue={'8a7eee20-497f-4f26-85d1-04f86c7ab6dc'} type="text" className='hidden' />
                         <input name='subject' defaultValue={'New Message From Portfolio'} type="text" className='hidden' />
                         <div className='my-2'>
                             <p className='text-sky-600 font-semibold'>Name</p>
-                            <input name='name' className='bg-[#0B1120] text-white px-2 py-2 w-100 rounded-lg' type="text" placeholder='Type your name' required/>
+                            <input name='name' className='bg-[#0B1120] text-white px-2 py-2 w-80 md:w-100 rounded-lg' type="text" placeholder='Type your name' required/>
                         </div>
                         <div className='my-2'>
                             <p className='text-sky-600 font-semibold'>Email</p>
-                            <input name='email' className='bg-[#0B1120] text-white px-2 py-2 w-100 rounded-lg' type="email" placeholder='Type your email' required/>
+                            <input name='email' className='bg-[#0B1120] text-white px-2 py-2 w-80 md:w-100 rounded-lg' type="email" placeholder='Type your email' required/>
                         </div>
                         <div className='my-2'>
                             <p className='text-sky-600 font-semibold'>Your Message</p>
-                            <textarea name='message' className='bg-[#0B1120] text-white px-2 py-2 w-100 rounded-lg' placeholder='You can say something...' required/>
+                            <textarea name='message' className='bg-[#0B1120] text-white px-2 py-2 w-80 md:w-100 rounded-lg' placeholder='You can say something...' required/>
                         </div>
-                        <input className='w-100 rounded-lg bg-linear-to-r to-sky-300 font-semibold
+                        <input className='w-80 md:w-100 rounded-lg bg-linear-to-r to-sky-300 font-semibold
                     cursor-pointer from-sky-900 px-4 py-2 font-medium text-black hover:text-white hover:bg-black' type="submit" defaultValue={'Send Message'}/>
                     </form>
                 </motion.div>
