@@ -50,7 +50,7 @@ const Navbar = () => {
                         }
                         </div>
                         {/* Menu Content */}
-                        <div className={`absolute bg-gray-700 p-5 flex flex-col gap-2 text-white duration-500 ${menu ? 'top-15' : 'top-[-160]'}`}>
+                        <div className={`absolute bg-gray-700 p-5 flex flex-col gap-2 text-white duration-500 ${menu ? 'top-15' : 'top-[-180]'}`}>
                             <Link href={'/#about'}>About</Link>
                             <Link href={'/#skills'}>Skills</Link>
                             <Link href={'/Projects'} scroll={true}>Projects</Link>
