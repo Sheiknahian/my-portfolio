@@ -86,7 +86,7 @@ const Contact = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1 }}
-                className='flex justify-center items-center bg-white rounded-2xl p-4 md:p-10'>
+                className='flex justify-center items-center bg-white rounded-2xl px-4 py-10 md:p-10'>
                     <form action={'https://api.web3forms.com/submit'} method='POST' className='flex flex-col items-center'>
                         <h4 className='font-bold text-2xl text-center text-sky-600 mb-5'>{"Let's Build Something Amazing Together"}</h4>
                         <input name='access_key' defaultValue={'8a7eee20-497f-4f26-85d1-04f86c7ab6dc'} type="text" className='hidden' />
