@@ -41,7 +41,7 @@ const Navbar = () => {
             <div className='md:hidden relative'>
                 <nav className="p-5 flex justify-between items-center border-b border-white bg-[#111827] backdrop-blur-md">
                     <div>
-                        <div onClick={handleMenu} className='text-2xl'>
+                        <div onClick={handleMenu} className='text-2xl text-white'>
                         {
                             menu ?
                             <FaX></FaX>
