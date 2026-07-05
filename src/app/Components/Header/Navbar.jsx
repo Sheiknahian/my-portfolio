@@ -50,11 +50,11 @@ const Navbar = () => {
                         }
                         </div>
                         {/* Menu Content */}
-                        <div className={`absolute bg-gray-700 p-5 flex flex-col gap-2 text-white duration-500 ${menu ? 'top-15' : 'top-[-180]'}`}>
-                            <Link href={'/#about'}>About</Link>
-                            <Link href={'/#skills'}>Skills</Link>
-                            <Link href={'/Projects'} scroll={true}>Projects</Link>
-                            <Link href={'/#contact'}>Contact</Link>
+                        <div className={`absolute bg-gray-700 py-4 flex flex-col gap-4 text-white duration-500 ${menu ? 'top-15' : 'top-[-180]'}`}>
+                            <Link className='mx-5 border-b-2 border-sky-500' href={'/#about'}>About</Link>
+                            <Link className='mx-5 border-b-2 border-sky-500' href={'/#skills'}>Skills</Link>
+                            <Link className='mx-5 border-b-2 border-sky-500' href={'/Projects'} scroll={true}>Projects</Link>
+                            <Link className='mx-5 border-b-2 border-sky-500' href={'/#contact'}>Contact</Link>
                         </div>
                     </div>
                     <Link href={'/'}>
