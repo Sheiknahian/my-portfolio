@@ -65,7 +65,7 @@ export const techMap = {
     },
 };
 const getProjects = async() => {
-    const res = await fetch('http://localhost:3000/projects.json').then(res=>res.json())
+    const res = await fetch('/projects.json').then(res=>res.json())
     return res
 }
 const Projects = async() => {

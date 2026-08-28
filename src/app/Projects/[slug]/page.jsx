@@ -5,7 +5,7 @@ import { techMap } from '../page';
 import { GrGithub } from 'react-icons/gr';
 
 const getProject = async(slug) => {
-    const result = await fetch('http://localhost:3000/projects.json').then(res=>res.json())
+    const result = await fetch('/projects.json').then(res=>res.json())
     return result.find(res=>res.slug === slug)
 }
 const Details = async({params}) => {
