@@ -26,9 +26,9 @@ const Footer = () => {
                     </div>
                     <div className='flex flex-col items-center gap-10'>
                         <div className='text-3xl flex items-center gap-10'>
-                            <span className='text-blue-500'><FaFacebook></FaFacebook></span>
-                            <span className='text-green-500'><TbBrandFiverr></TbBrandFiverr></span>
-                            <span className='text-white'><FaGithub></FaGithub></span>
+                            <a href='https://www.facebook.com/nahianology' className='text-blue-500'><FaFacebook></FaFacebook></a>
+                            <a href='https://www.fiverr.com/sheikh_nahian' className='text-green-500'><TbBrandFiverr></TbBrandFiverr></a>
+                            <a href='https://github.com/Sheiknahian' className='text-white'><FaGithub></FaGithub></a>
                             <span className='text-blue-500'><FaLinkedin></FaLinkedin></span>
                         </div>
                         <div className="flex gap-10 font-semibold items-center text-white">

@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-'use client'
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import H3Text from '../Components/h3Text';
 import { FaArrowRight, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
-import { SiMongodb, SiExpress, SiTailwindcss, SiFirebase } from "react-icons/si";
+import { SiMongodb, SiExpress, SiTailwindcss, SiFirebase, SiNextdotjs, SiStripe } from "react-icons/si";
 import Link from 'next/link';
+import Image from 'next/image';
 
-const techMap = {
+export const techMap = {
     html: {
         name: "HTML5",
         icon: <FaHtml5></FaHtml5>,
@@ -53,18 +53,24 @@ const techMap = {
         icon: <SiTailwindcss></SiTailwindcss>,
         className: "bg-sky-100 text-sky-900 border border-sky-500/20",
     },
+    nextjs: {
+        name: "Next.js",
+        icon: <SiNextdotjs />,
+        className: "bg-gray-700/10 text-black border border-gray-500/20",
+    },
+    stripe: {
+        name: "Stripe",
+        icon: <SiStripe />,
+        className: "bg-indigo-500/10 text-indigo-500 border border-indigo-500/20",
+    },
 };
-
-const Projects = () => {
-    const [projects, setProjects] = useState([])
-    useEffect(()=>{
-        window.scrollTo(0, 0);
-        fetch('/projects.json')
-            .then(res=>res.json())
-            .then(data=>setProjects(data))
-    }, [setProjects])
-    console.log(projects);
-    
+const getProjects = async() => {
+    const res = await fetch('http://localhost:3000/projects.json').then(res=>res.json())
+    return res
+}
+const Projects = async() => {
+    const projects = await getProjects()
+    // console.log(projects[0]?.technologies.map((tech) => techMap[tech]))
     return (
         <div className='mt-30 mb-20 text-center mx-5'>
             <H3Text>My Projects</H3Text>
@@ -73,7 +79,7 @@ const Projects = () => {
                 projects?.map((project, index)=>
                     <div key={index} className="bg-white overflow-hidden rounded-3xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:border-sky-500/30 shadow hover:shadow-sky-400 shadow-lg">
                     
-                            <img src={project.image} alt="Project Preview" className="h-52 w-full object-cover transition duration-500 hover:scale-110"/>
+                            <Image width={1400} height={800} src={project.image} alt="Project Preview" className="h-52 w-full object-cover transition duration-500 hover:scale-110"/>
                             <div className="p-5">
                                 <span className="rounded-full bg-sky-100 px-3 py-1 text-sm font-medium text-sky-700">
                                     {project.category}
