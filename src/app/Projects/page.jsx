@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import H3Text from '../Components/h3Text';
 import { FaArrowRight, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa";

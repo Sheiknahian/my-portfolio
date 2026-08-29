@@ -1,6 +1,5 @@
 'use client'
 import React from 'react';
-import H3Text from '../h3Text';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { GrGithub } from 'react-icons/gr';

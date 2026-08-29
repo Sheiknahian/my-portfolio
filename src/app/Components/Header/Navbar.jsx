@@ -1,15 +1,8 @@
-'use client'
-import { usePathname, useRouter } from 'next/navigation';
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
-import { MdMenu } from 'react-icons/md';
-import { FaX } from 'react-icons/fa6';
+import Menu from '../Menu';
 
 const Navbar = () => {
-    const [menu, setMenu] = useState(false)
-    const handleMenu = () => {
-        setMenu(!menu)
-    }
     return (
         <>
             <div className='hidden md:block'>
@@ -40,23 +33,7 @@ const Navbar = () => {
             </div>
             <div className='md:hidden relative'>
                 <nav className="p-5 flex justify-between items-center border-b border-white bg-[#111827] backdrop-blur-md">
-                    <div>
-                        <div onClick={handleMenu} className='text-2xl text-white'>
-                        {
-                            menu ?
-                            <FaX></FaX>
-                            :
-                            <MdMenu></MdMenu>
-                        }
-                        </div>
-                        {/* Menu Content */}
-                        <div className={`absolute bg-gray-700 py-4 flex flex-col gap-4 text-white duration-500 ${menu ? 'top-15' : 'top-[-250]'}`}>
-                            <Link className='mx-5 border-b-2 border-sky-500' href={'/#about'}>About</Link>
-                            <Link className='mx-5 border-b-2 border-sky-500' href={'/#skills'}>Skills</Link>
-                            <Link className='mx-5 border-b-2 border-sky-500' href={'/Projects'} scroll={true}>Projects</Link>
-                            <Link className='mx-5 border-b-2 border-sky-500' href={'/#contact'}>Contact</Link>
-                        </div>
-                    </div>
+                    <Menu></Menu>
                     <Link href={'/'}>
                         <h1 className="text-4xl font-extrabold text-white">
                             <span className="text-sky-500">&lt;</span>
