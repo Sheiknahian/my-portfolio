@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Menu from '../Menu';
+import NavbarTabs from '../NavbarTabs';
 
 const Navbar = () => {
     return (
@@ -14,20 +15,24 @@ const Navbar = () => {
                             <span className="text-sky-500"> /&gt;</span>
                         </h1>
                     </Link>
-                    <div className="flex gap-10 font-semibold items-center text-white">
-                        <Link href={'/#about'}>About</Link>
-                        <Link href={'/#skills'}>Skills</Link>
-                        <Link href={'/Projects'} scroll={true}>Projects</Link>
-                        <Link href={'/#contact'}>Contact</Link>
-                    </div>
+                    <NavbarTabs></NavbarTabs>
                     <div className="flex gap-3">
-                        <button className="rounded-lg border-2 cursor-pointer border-sky-700 px-4 py-2 font-semibold text-sky-700 bg-white hover:bg-black">
+                        <a
+                            href="/Resume-Sheikh-Nahian.pdf"
+                            download="Resume-Sheikh-Nahian.pdf"
+                            className="rounded-lg border-2 cursor-pointer border-sky-700 px-4 py-2 font-semibold text-sky-700 bg-white hover:bg-black hover:text-white"
+                        >
                             Resume
-                        </button>
-                        <button className="rounded-lg bg-linear-to-r to-sky-300 font-semibold
-                        cursor-pointer from-sky-900 px-4 py-2 font-medium text-black hover:text-white hover:bg-black">
+                        </a>
+
+                        <a
+                            href="https://www.fiverr.com/sheikh_nahian"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="rounded-lg bg-linear-to-r from-sky-900 to-sky-300 px-4 py-2 font-semibold cursor-pointer text-black hover:text-white"
+                        >
                             Hire Me
-                        </button>
+                        </a>
                     </div>
                 </nav>
             </div>

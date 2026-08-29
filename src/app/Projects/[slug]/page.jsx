@@ -50,7 +50,7 @@ const Details = async({params}) => {
                         {project.category}
                     </span>
 
-                    <span className="text-sm text-green-400">
+                    <span className={`text-sm text-green-400 ${project.status === 'Unfinished' && 'text-yellow-500'}`}>
                         {project.status}
                     </span>
                     </div>

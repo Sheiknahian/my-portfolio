@@ -8,7 +8,9 @@ export default function Home() {
   return (
     <div className="bg-zinc-50 font-sans dark:bg-black">
       <main className=" bg-[#0B1120]">
-        <Banner></Banner>
+        <section id="home">
+          <Banner></Banner>
+        </section>
         <section id="about" className="scroll-mt-25">
           <About></About>
         </section>

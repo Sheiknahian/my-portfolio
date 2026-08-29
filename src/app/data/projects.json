@@ -27,7 +27,7 @@
         "githubServer": "https://github.com/username/kids-bazar-server",
         "liveLink": "https://kids-bazar.vercel.app",
         "category": "Full Stack",
-        "status": "Completed"
+        "status": "Unfinished"
     },
     {
         "id": 2,
@@ -59,6 +59,35 @@
     },
     {
         "id": 3,
+        "title": "Real-Time Chat Application",
+        "slug": "real-time-chat-application",
+        "image": "/SN_Chat_Cover1.png",
+        "description": "A mobile-first real-time chat application with user authentication and Socket.IO-powered messaging.",
+        "technologies": [
+            "react",
+            "nodejs",
+            "express",
+            "mongodb",
+            "firebase",
+            "socketio",
+            "tailwind"
+        ],
+        "Home": [
+            "Google authentication",
+            "Real-time messaging with Socket.IO",
+            "User online status",
+            "Message seen/read status",
+            "MongoDB message storage",
+            "Responsive mobile-first interface"
+        ],
+        "githubClient": "https://github.com/Sheiknahian/React_Chat_Client",
+        "githubServer": "https://github.com/Sheiknahian/react-chat-server",
+        "liveLink": "https://react-chat-two-opal.vercel.app",
+        "category": "Full Stack",
+        "status": "Unfinished"
+    },
+    {
+        "id": 4,
         "title": "E-Commerce Platform",
         "slug": "e-commerce-platform",
         "image": "/smart-deals-res/smart-deals-cover.png",
@@ -82,10 +111,10 @@
         "githubServer": "https://github.com/username/parcel-server",
         "liveLink": "https://pro-fast-client-three.vercel.app/",
         "category": "Full Stack",
-        "status": "Completed"
+        "status": "Unfinished"
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "Online Reading Hub",
         "slug": "online-reading-hub",
         "image": "/book-vibe-res/book-vibe-cover.png",
@@ -108,7 +137,7 @@
         "status": "Completed"
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "English Learning Platform",
         "slug": "english-learning-platform",
         "image": "/english-janala-res/english-janala-cover.png",

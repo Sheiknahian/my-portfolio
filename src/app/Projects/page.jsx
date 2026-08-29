@@ -1,7 +1,7 @@
 import React from 'react';
 import H3Text from '../Components/h3Text';
 import { FaArrowRight, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
-import { SiMongodb, SiExpress, SiTailwindcss, SiFirebase, SiNextdotjs, SiStripe } from "react-icons/si";
+import { SiMongodb, SiExpress, SiTailwindcss, SiFirebase, SiNextdotjs, SiStripe, SiSocketdotio } from "react-icons/si";
 import Link from 'next/link';
 import Image from 'next/image';
 import projects from '@/app/data/projects.json'
@@ -62,6 +62,11 @@ export const techMap = {
         name: "Stripe",
         icon: <SiStripe />,
         className: "bg-indigo-500/10 text-indigo-500 border border-indigo-500/20",
+    },
+    socketio: {
+        name: "Socket.IO",
+        icon: <SiSocketdotio />,
+        className: "bg-gray-900/10 text-black border border-gray-500/20",
     },
 };
 // const getProjects = async() => {
