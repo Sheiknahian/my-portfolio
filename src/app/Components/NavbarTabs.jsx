@@ -85,7 +85,7 @@ const NavbarTabs = () => {
                     active === "Projects" ? "text-sky-500" : ""
                 }`}
                 >
-                About
+                Projects
 
                 <span
                     className={`absolute -bottom-2 left-0 h-0.5 bg-sky-500 transition-all duration-300 ${
